@@ -1,0 +1,327 @@
+/* You may set the width and height of container/section elements in percentages. 
+DO NOT USE PERCENTAGES IN TEXTS AND IMAGES : No responsiveness  */
+
+@font-face {
+	font-family: Gotham;
+	src: url(../fonts/Gotham-Bold.otf);
+}
+
+body {
+	background: white;
+}
+
+#container {
+	width: 1250px;
+	height: 2450px;
+	position: relative;
+	left: 50%;
+	margin-left: -625px;
+}
+
+.section {
+	width: 100%;
+	height: 800px;
+}
+
+.section2 {
+	width: 100%;
+	height: 1300px;
+	position: relative;
+}
+
+/*-------------------->DIV ONE<--------------------*/
+
+#first {
+	background: #99ba75;
+}
+
+.vert {
+	font-family: Georgia;
+	font-size: 1em;
+	font-weight: bold;
+	letter-spacing: 4.5em;
+	text-align: center;
+	position: relative;
+	top: 250px;
+	color: black;
+}
+
+.space {
+	font-family: Gotham;
+	font-weight: bold;	
+	font-size: 7em;
+	float: left;
+	margin-left: 110px;
+	color: white;
+	position: absolute;
+	top: 100px;
+}
+
+.arrow { 
+	background: url("../images/arrow.png");
+	position: absolute;
+	width: 20px;
+	height: 20px;
+}
+
+@-webkit-keyframes s_move {
+	0%,100% { top: 295px; opacity 1;}
+	50% { top: 50px; opacity: 0; }
+}
+
+#s {
+	position: relative;
+	-webkit-animation: s_move 9s infinite ease-out;
+}
+
+@-webkit-keyframes p_move {
+	0%, 100% { top: 295px; opacity: 1}
+	50% { top: 700px; opacity: 0; }
+}
+
+#p {
+	position: relative;
+	top: 295px;
+	-webkit-animation: p_move 9s infinite ease-out;
+}
+
+@-webkit-keyframes a_move {
+	0%,100% { top: 295px; opacity: 1; }
+	50% { top: 10px; opacity: 0; }
+}
+
+#a {
+	position: relative;
+	-webkit-animation: a_move 9s infinite ease-out;
+}
+
+@-webkit-keyframes c_move {
+	0%, 100% { top: 295px; opacity: 1;}
+	50% { top: 400px; opacity: 0; }
+}
+
+#c {
+	position: relative;
+	top: 295px;
+	-webkit-animation: c_move 9s infinite ease-out;
+}
+
+@-webkit-keyframes e_move {
+	0%,100% { top: 295px; opacity 1;}
+	50% { top: 20px; opacity: 0; }
+}
+
+#e {
+	position: relative;
+	-webkit-animation: e_move 9s infinite ease-out;
+}
+
+@-webkit-keyframes l_move {
+	0%,100% { top: 295px; opacity 1;}
+	50% { top: 500px; opacity: 0; }
+}
+
+#l {
+	position: relative;
+	top: 295px;
+	-webkit-animation: l_move 9s infinite ease-out;
+}
+
+/*-------------------->DIV TWO<--------------------*/
+
+.body { 
+	font-family: georgia;
+	font-size: 11px;
+	hyphens: auto;
+	color: white;
+}
+
+@-webkit-keyframes p1_move {
+	0%, 100%{ top: 200px; }
+	50% { top: 150px; }
+}
+
+.p1 {
+	position: absolute;
+	left: 850px;
+	top: 200px;
+	width: 300px;
+	height: 145px;
+	line-height: 150%;
+	background: #99ba75;
+	border: 10px solid #99ba75;
+	border-left: 15px solid #99ba75;
+	border-right: 15px solid #99ba75;
+	display: inline-block;
+	-webkit-animation: p1_move 3s;
+}
+
+@-webkit-keyframes p2_move {
+	0%, 100%{ top: 325px; }
+	50% { top: 275px; }
+}
+
+.p2 {
+	position: absolute;
+	left:850px;
+	top: 325px;
+	width: 300px;
+	height: 150px;
+	line-height: 150%;
+	background: #99ba75;
+	border: 10px solid #99ba75;
+	border-left: 15px solid #99ba75;
+	border-right: 15px solid #99ba75;
+	-webkit-animation: p2_move 3s;
+}
+
+@-webkit-keyframes p3_move {
+	0%, 100% { top: 1000px; }
+	50% { top: 950px; }
+}
+
+.p3 {
+	position: relative;
+	top: 1000px;
+	left: 325px;
+	width: 500px;
+	height: 97px;
+	line-height: 150%;
+	background: #99ba75;
+	border: 10px solid #99ba75;
+	border-left: 15px solid #99ba75;
+	border-right: 15px solid #99ba75;
+	-webkit-animation: p3_move 3s;
+	animation-delay: 3s;
+}
+
+.p4 {
+	font-family: Gotham;
+	font-size: 3.5em;
+	font-weight: bold;
+	position: relative;
+	left: 200px;
+	top: 348px
+}
+
+.p5 {
+	font-family: Gotham;
+	font-size: 3.5em;
+	font-weight: bold;
+	color: white;
+	text-align: justify;
+	position: relative;
+	left: 879px;
+	top: 749px;
+	width: 300px;
+	height: 50px;
+}
+
+/*---------------------------------------->IMAGES*/
+
+.central {
+	position: absolute;
+	top: 72px;
+	width: 100%;
+	height: 100%;
+	background: url("../images/central_park.jpg") no-repeat;
+	z-index: -1; 
+}
+
+.leaf {
+	position: absolute;
+	left: 669px;
+	top: 800px;
+	width: 500px;
+	height: 600px;
+	background: url("../images/leafy.jpg") no-repeat;
+	z-index: -1; 
+}
+
+/*----------------------------->TRANSFORMING TEXT*/
+
+@-webkit-keyframes d1_fade { 
+	0%,100% { opacity: 0; }
+	50% { opacity: 1; }
+}
+
+.d1 { 
+	color: white;
+
+	opacity: 0;
+	-webkit-animation: d1_fade 7s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes d2_fade { 
+	0%,100% { opacity: 0; }
+	50% { opacity: 1; }
+}
+
+.d2 { 
+	color: white;
+
+	opacity: 0;
+	-webkit-animation: d2_fade 7s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+
+@-webkit-keyframes d3_fade { 
+	0%,100% { opacity: 0; }
+	50% { opacity: 1; }
+}
+
+.d3 { 
+	opacity: 0;
+	-webkit-animation: d3_fade 7s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 4s;
+}
+
+@-webkit-keyframes d4_fade { 
+	0%,100% { opacity: 0; }
+	50% { opacity: 1; }
+}
+
+#d4 { 
+	opacity: 0;
+	-webkit-animation: d4_fade 3s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;
+	text-align: justify;
+	letter-spacing: 1.7em;
+}
+
+.hi { 
+	font-family: Georgia;
+	font-size: .75em;
+	font-weight: bold;
+	}
+
+.extra {
+	position: relative;
+	left: 200px;
+	top: 900px;
+}
+
+.phone { 
+	position: relative;
+	left: 550px;
+	top: 855px;
+}
+
+.mail { 
+	position: relative;
+	left: 950px;
+	top: 845px;
+}
+
+
+
+
+
+
+
+
